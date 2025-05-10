@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Pitstop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Pitstop</h1>
+    <label for="valorVehiculo">Valor del Vehículo:</label>
+    <input type="number" id="valorVehiculo" value="0"><br><br>
+
+    <label for="mecanica">Coste Mecánica:</label>
+    <input type="number" id="mecanica" value="0"><br><br>
+
+    <label for="carroceria">Coste Carrocería:</label>
+    <input type="number" id="carroceria" value="0"><br><br>
+
+    <h2>Total: <span id="total">0</span> €</h2>
+
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <button onclick="resetear()">Resetear</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
